@@ -296,7 +296,7 @@ blockquote p {
 	left:0;
 	width:100%;
 	height:100%;
-	background:#0c2505;
+	background:#133e08;
  	opacity:.2;
 	z-index: 2
 }
@@ -425,7 +425,7 @@ blockquote p {
 }
 .header-top_contacts a span {
     padding-right: 10px;
-    color: white;
+    color: white!important;
 }
 .lang-wrap {
 	float: right;
@@ -2315,7 +2315,7 @@ height: 20rem;
 	top: 50%;
 	width: 40px;
 	height: 1px;
-	background: var(--main-color);
+	/* background: var(--main-color); */
 }
 .contacts-card-item span:before {
 	right: 10px;
@@ -3479,7 +3479,7 @@ height: 20rem;
 	top: 50%;
 	height: 1px;
 	width: 100px;
-	background: #eee;
+	
 } 
 .dc_dec-item_right:before {
 	left: 30px;
@@ -3648,8 +3648,9 @@ height: 20rem;
 }
 .fw-aminit-wrap {
 	position: relative;
-	height: 60vh;
+	height: 70vh;
 	overflow: hidden;
+
 }
 .fw-aminit-item {
 	position: relative;
@@ -3658,6 +3659,7 @@ height: 20rem;
 	border-right: 1px solid rgba(255,255,255,.2);
 	cursor: pointer;
 	z-index: 20;
+	
 }
 .fw-aminit-item:before {
 	content: '';
@@ -3666,10 +3668,14 @@ height: 20rem;
 	bottom: 30px;
 	right: 30px;
 	left: 30px;
-	border: 1px solid rgba(255,255,255,.2);
+
 	border-radius: 10px;
-	background: rgba(39, 37, 53, .3);
+	background: ;
     transition: all .3s ease-in-out;
+}
+.fw-aminit-item-container img{
+	width: 100%;
+	border-radius: 20px;
 }
 .fw-aminit-item:after {
 	content: '';
@@ -3678,7 +3684,7 @@ height: 20rem;
 	left: 50%;
 	height: 0;
 	width: 1px;
-	background:  rgba(255,255,255,.2);
+	background:  rgba(255, 255, 255, 0.2);
     transition: all .3s ease-in-out;
 }
 .fw-aminit-item.act-index:after {
@@ -3687,7 +3693,7 @@ height: 20rem;
 .fw-aminit-item.act-index:before {
 	-webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-	background: rgba(39, 37, 53, .8);
+	background: rgba(46, 174, 87, 0.2);
 }
 .fw-aminit-wrap .fw-aminit-item:last-child {
 	border:none;
@@ -3715,10 +3721,11 @@ height: 20rem;
 }
 .fw-aminit-item-container h3 {
 	color:#fff;
-	font-size: 3.2em;
+	font-size: 3em;
 	position: relative;
+
 }
-.fw-aminit-item-container h3:before {
+/* .fw-aminit-item-container h3:before {
 	content: '';
 	position: absolute;
 	bottom: -14px;
@@ -3727,7 +3734,7 @@ height: 20rem;
 	height: 1px;
 	margin-left: -25px;
 	background: var(--main-color);
-}
+} */
 .fw-aminit-item-container h5 {
 	font-size: 1.7em;
     font-style: italic;
@@ -3740,7 +3747,7 @@ height: 20rem;
 .aminit-work-time {
 	position: absolute;
 	left: 50%;
-	bottom: 90px;
+	bottom: 50px;
 	transform: translateX(-50%);
 	padding: 15px 40px;
 	border-radius: 10px;
@@ -3749,7 +3756,7 @@ height: 20rem;
 	background: rgba(255,255,255,.07);
 	box-shadow: 0px 0px 0px  7px rgba(255,255,255,.07);
 	opacity: 0;
-	margin-bottom: 10px;
+	margin-bottom:0px;
     transition: all .3s ease-in-out;
 }
 .fw-aminit-item.act-index .aminit-work-time  {
@@ -3763,10 +3770,10 @@ height: 20rem;
 }
 .aminit-work-time span {
 	display: block;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 }
 .dark-bg {
-	background: #272535
+	background: white
 }
 .gray-bg {
 	background: #f9f9f9;
@@ -4438,6 +4445,7 @@ height: 20rem;
 	bottom: 0;
 	z-index: 3;
 }
+
 .wide-section:after {
 	content: '';
 	position: absolute;
@@ -4452,6 +4460,7 @@ height: 20rem;
 }
 .wide_section-title {
 	margin:40px 0 90px;
+	background-color;
 }
 .wide_section-title h3 {
 	font-size: 3.5em;
@@ -4917,7 +4926,12 @@ height: 20rem;
     border-radius: 10px;
  	box-shadow: 0px 30px 64px 0px rgba(0,0,0,.4);	
 }
+.room-sec-title{
+	font-size: 2rem;
+	color: var(--main-color);
+}
 /*------ responsive----*/
+
 @media only screen and  (max-width: 1600px) {
 .content-dec2:before {
     display: none
@@ -4947,6 +4961,7 @@ height: 20rem;
     border-left:1px solid #eee;
     border-radius: 0  0 10px 10px  ;
 }	
+
 }
 @media only screen and  (max-width: 1268px) {
 .dc_dec-item_left, .dc_dec-item_right {
@@ -5202,7 +5217,7 @@ height: 20rem;
     margin: 40px 0 20px;
 }
 .dark-bg .section-title h2 , .column-wrap-bg-text h3     {
-    font-size: 3.0em;
+    font-size: 2.0em;
 }
 .content-section.parallax-section.hero-section .htc_single .section-title h2 {
     font-size: 4.0em;
@@ -5210,7 +5225,7 @@ height: 20rem;
 	line-height: 56px;
 }	
 .hero-title-container .section-title h2 {
-    font-size: 4.7em;
+    font-size: 4.3em;
 }	
 .fw-search-wrap_hero .input-wrap , .fw-search-wrap_hero  .quantity  , .fw-search-wrap .input-wrap , .fw-search-wrap   .quantity  {
 	margin-bottom: 10px;
@@ -5493,7 +5508,7 @@ height: 20rem;
 }
 @media only screen and  (max-width: 640px) {
 .hero-title-container .section-title h2 , .content-section.parallax-section.hero-section .section-title h2 {
-    font-size: 3.2em;
+    font-size: 3em;
 	padding: 10px 0 ;
 	line-height: 46px;
 }
