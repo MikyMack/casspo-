@@ -1552,7 +1552,7 @@ nav li ul a:before , nav li ul a:after {
 }
 .hs_btn:hover i {
 	background: var(--main-color);
-	color: var(--sec-color);
+	color: white;
 	box-shadow: 0px 0px 0px 12px rgba(255, 255, 255, 0.2);
 }
 .hs_btn:before {
@@ -5347,7 +5347,9 @@ height: 20rem;
  .header-top_contacts,.header-top , .comments-avatar , .hero-menu_header li:after , .hero-menu_header li:before ,.header-social ,.lang-wrap {
     display: none		
 }
- 
+ .hero-wrap{
+	margin-top: 0px;
+ }
 .show-cart, .show-share-btn , .serach-header-btn_wrap ,  .nav-button-wrap {
     width: 40px;
 	border: none;
@@ -5369,6 +5371,10 @@ height: 20rem;
 }
 .stg_link {
     margin-top: 20px;
+
+}
+.mousey{
+	display: none;
 }
 .testimonilas-carousel-wrap {
     padding: 0;
