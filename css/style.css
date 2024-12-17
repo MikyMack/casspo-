@@ -4747,6 +4747,7 @@ height: 20rem;
 }
 .rooms-carousel-item_container h3 a {
 	color:#fff;
+	
 }
 .rooms-carousel-item_container h3 {
 	text-align: left;
@@ -5189,7 +5190,9 @@ height: 20rem;
 .client-item img {
     aspect-ratio: 4 / 2;
     transform: scale(1.0);
+	opacity: 1;
 }
+
 .wide-section:after {
     left: 15px;
     bottom: 15px;
@@ -5459,6 +5462,9 @@ height: 20rem;
 .container {
     width: min(100% - 10px, 1600px);
 }
+.wide_section-title{
+	
+}
 .sr-opt {
     position: relative;
  	border: none;
@@ -5483,10 +5489,11 @@ height: 20rem;
  	top:90px ;
     transform: translateY(0);
 }
+
 }
 @media only screen and  (max-width: 640px) {
 .hero-title-container .section-title h2 , .content-section.parallax-section.hero-section .section-title h2 {
-    font-size: 3.7em;
+    font-size: 3.2em;
 	padding: 10px 0 ;
 	line-height: 46px;
 }
