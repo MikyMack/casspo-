@@ -3678,7 +3678,7 @@ height: 20rem;
 	left: 30px;
 
 	border-radius: 10px;
-	background: ;
+	/* background: ; */
     transition: all .3s ease-in-out;
 }
 .fw-aminit-item-container img{
@@ -4468,7 +4468,7 @@ height: 20rem;
 }
 .wide_section-title {
 	margin:40px 0 90px;
-	background-color;
+	/* background-color; */
 }
 .wide_section-title h3 {
 	font-size: 3.5em;
@@ -4935,7 +4935,7 @@ height: 20rem;
  	box-shadow: 0px 30px 64px 0px rgba(0,0,0,.4);	
 }
 .room-sec-title{
-	font-size: 2rem;
+	font-size: 3.5rem;
 	color: var(--main-color);
 }
 /*------ responsive----*/
@@ -5368,6 +5368,13 @@ height: 20rem;
     margin:30px 0 0;
 	display: inline-block;
 }
+.column-wrap-bg-text h3{
+	font-size: 1.4rem;
+	
+ }
+ .column-wrap-bg-text h4{
+	font-size: .8rem;
+ }
 }
 @media only screen and  (max-width: 768px) {
  .header-top_contacts,.header-top , .comments-avatar , .hero-menu_header li:after , .hero-menu_header li:before ,.header-social ,.lang-wrap {
@@ -5377,7 +5384,8 @@ height: 20rem;
 	margin-top: 0px;
  }
  .column-wrap-bg-text h3{
-	font-size: 1.3rem;
+	font-size: 1.4rem;
+	
  }
  .column-wrap-bg-text h4{
 	font-size: .8rem;
@@ -5390,6 +5398,10 @@ height: 20rem;
 }
 .serach-header-btn_wrap {
     padding: 0  ;
+}
+.room-sec-title{
+   font-size: 2.5rem;
+   padding: 10px;
 }
 .nav-button-wrap {
    margin: 0 22px 0 0;
@@ -5525,6 +5537,9 @@ height: 20rem;
     font-size: 3em;
 	padding: 10px 0 ;
 	line-height: 46px;
+}
+.section-title h2{
+	font-size: 2.5em;
 }
 .contacts-card-item {
     padding: 30px  ;
