@@ -5368,6 +5368,12 @@ height: 20rem;
  .hero-wrap{
 	margin-top: 0px;
  }
+ .column-wrap-bg-text h3{
+	font-size: 1.3rem;
+ }
+ .column-wrap-bg-text h4{
+	font-size: .8rem;
+ }
 .show-cart, .show-share-btn , .serach-header-btn_wrap ,  .nav-button-wrap {
     width: 40px;
 	border: none;
