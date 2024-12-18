@@ -386,13 +386,21 @@ blockquote p {
 	overflow: hidden;
 	position: relative;
 }
+.logo-holder lottie-player {
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 .logo-holder img {
 	width: auto;
 	height: 70px;
 	float: left;
 	position: relative;
 	top: 50%;
-	margin-top: -35px;
+	margin-top: -75px;
 }
 .header-top_contacts {
 	float: left;
@@ -5564,4 +5572,108 @@ height: 20rem;
 	-webkit-background-size:cover;
 	background-position:center;
 }
+}
+
+.whatsapp-icon {
+	position: fixed;
+	bottom: 80px;
+	right: 20px;
+	z-index: 1000;
+}
+
+.whatsapp-icon img {
+	width: 50px;
+	height: 50px;
+}
+
+/* @media (min-width: 768px) {
+	.whatsapp-icon {
+		display: none;
+	}
+} */
+
+/* Mobile Navbar Styles */
+#mobilenavbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center; /* Center text within the navbar */
+}
+
+#mobilenavbar .container {
+    padding: 0;
+}
+
+#mobilenavbar .row {
+    text-align: center;
+    padding-top: 2px;
+}
+
+#mobilenavbar .col {
+    padding: 0;
+}
+
+#mobilenavbar a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    text-align: center; /* Center text within each link */
+}
+
+#mobilenavbar img {
+    max-width: 30px;
+    display: block;
+    margin: 0 auto; /* Center images within each link */
+}
+
+#mobilenavbar p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center; /* Center text within each paragraph */
+}
+
+#mobilenavbar p.home {
+    color: #257731;
+}
+
+#mobilenavbar p.services,
+#mobilenavbar p.about,
+#mobilenavbar p.blogs,
+#mobilenavbar p.contact {
+    color: #919191;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    #mobilenavbar p {
+        font-size: 10px;
+    }
+
+    #mobilenavbar img {
+        max-width: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    #mobilenavbar p {
+        font-size: 9px;
+    }
+
+    #mobilenavbar img {
+        max-width: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    #mobilenavbar p {
+        font-size: 8px;
+    }
+
+    #mobilenavbar img {
+        max-width: 18px;
+    }
 }
