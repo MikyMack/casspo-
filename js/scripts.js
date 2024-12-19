@@ -235,7 +235,11 @@ function initDiamant() {
                 640: {
                     slidesPerView: 1,
                 },
-            }
+            },
+            autoplay: {
+                delay: 2000, 
+                disableOnInteraction: false
+            },
         });
     }
     if ($(".single-carousel").length > 0) {
@@ -259,6 +263,10 @@ function initDiamant() {
                 nextEl: '.fw-carousel-button-next',
                 prevEl: '.fw-carousel-button-prev',
             },
+            autoplay: {
+                delay: 2000, 
+                disableOnInteraction: false
+            },
         });
     }
     if ($(".single-carousel2").length > 0) {
@@ -281,6 +289,10 @@ function initDiamant() {
                 nextEl: '.fw-carousel-button-next',
                 prevEl: '.fw-carousel-button-prev',
             },
+            autoplay: {
+                delay: 2000, 
+                disableOnInteraction: false
+            },
         });
     }
     if ($(".slideshow-container_wrap").length > 0) {
@@ -297,6 +309,10 @@ function initDiamant() {
             pagination: {
                 el: '.hero-slider-pag',
                 clickable: true,
+            },
+            autoplay: {
+                delay: 2000, 
+                disableOnInteraction: false
             },
         });
         ms1.on("slideChangeTransitionStart", function () {
