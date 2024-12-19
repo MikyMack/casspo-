@@ -370,7 +370,7 @@ blockquote p {
 	margin-right: 20px;
 }
 .header-social li a {
-    color: #78d878;
+    color: white;
  	font-size: 1.3em;
 	line-height: 100px;
     transition: all .2s ease-in-out;
@@ -944,12 +944,13 @@ nav li ul a:before , nav li ul a:after {
 	position: relative;
 }
 .main-footer {
-	background: rgb(7, 70, 7);
+	background: #FDFBD4;
 	position: fixed;
 	z-index: 2;
 	bottom: 0;
 	left: 0;
 	right: 0;
+
 }
 .footer-inner {
 	position: relative;
@@ -963,7 +964,7 @@ nav li ul a:before , nav li ul a:after {
 }
 .footer-widget-title {
 	text-align:left;
- 	color: white;
+ 	color: var(--main-color);
 	font-size:2.3em;
 	padding-bottom:36px;
 }
@@ -971,7 +972,7 @@ nav li ul a:before , nav li ul a:after {
 	position: relative
 }
 .subcribe-form input.enteremail{
-	border: 1px solid rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(42, 39, 39, 0.1);
 	border-right: none;
 	background: rgba(255, 255, 255, 0.05);
 	padding: 0 20px;
@@ -981,14 +982,14 @@ nav li ul a:before , nav li ul a:after {
 	border-radius:4px  0 0 4px;
 	position: relative;
 	z-index: 1;
-	color: #fff;
+	color: var(--main-color);
 	width:70%;
 	outline:none;
 	float:left;
  	font-family: var(--main-font);
 } 
 .enteremail::-webkit-input-placeholder {
-	color:#fff;
+	color:var(--main-color);
 }
 .subcribe-form .subscribe-button {
 	float:right;
@@ -1009,8 +1010,8 @@ nav li ul a:before , nav li ul a:after {
 	color: white;
 }
 .subcribe-form .subscribe-button:hover {
-	background:#fff;
-	color: var(--main-color);
+	background:#124106;
+	color:white;
 } 
 .subscribe-message {
 	position:absolute;
@@ -1025,10 +1026,10 @@ nav li ul a:before , nav li ul a:after {
 .footer-widget-content p {
 	text-align:left;
 	margin-bottom:15px;
-	color: rgba(255,255,255,0.7);
+	color: var(--main-color);
 }
 .footer-widget-content-link {
- 	color: white;
+ 	color: var(--main-color);
 	font-size:14px;
 	margin-top:6px;
 	position:relative;
@@ -1042,7 +1043,7 @@ nav li ul a:before , nav li ul a:after {
 	padding-bottom:4px;
 }
 .footer-widget-content-link:hover {
-	color:#fff;
+	color:rgb(15, 120, 15);
 }
 .footer-contacts {
 	margin-bottom:26px;
@@ -1052,7 +1053,7 @@ nav li ul a:before , nav li ul a:after {
   	font-family: var(--secondary-font);
 	text-align:left;
 	margin-bottom:10px;
-	color:#fff;
+	color:var(--main-color);
 	font-size: 1.2em
 }
 .footer-contacts li:last-child {
@@ -1062,9 +1063,10 @@ nav li ul a:before , nav li ul a:after {
 	margin-right:20px;
 	width:80px;
 	float:left;
+
 }
 .footer-contacts li a  , .footer-contacts li span{
-	color:#fff;
+	color: #124106;
     transition: all .2s linear;
 }
 .footer-list li {
@@ -1078,7 +1080,7 @@ nav li ul a:before , nav li ul a:after {
  	font-family: var(--secondary-font);
 }
 .footer-contacts li a:hover , .footer-list li a:hover {
-	color:rgb(150, 149, 149);	
+	color:rgb(15, 124, 15);	
 }
 .footer-list li:before {
     font-family: "Font Awesome 6 Pro";
@@ -1095,7 +1097,7 @@ nav li ul a:before , nav li ul a:after {
 	left: 4px;
 }
 .footer-list li a {
-	color:#fff;
+	color:var(--main-color);
 }
 .footer-title-dec {
 	position: absolute;
@@ -1110,7 +1112,7 @@ nav li ul a:before , nav li ul a:after {
 	position: relative;
 	height: 80px;
 	line-height: 80px;
-    background: white;	
+    background: #FDFBD4;	
 }
 .footer-social li {
 	display: inline-block;
@@ -1122,13 +1124,13 @@ nav li ul a:before , nav li ul a:after {
     transition: all .2s ease-in-out;
 }
 .footer-social li a:hover {
-	color:#fff;
+	color:green;
 }
 .footer-bottom {
 	position: relative;
 	height: 80px;
 	line-height: 80px;
-    background: white;
+    background: #FDFBD4;
 	overflow: hidden;
 	border-top: 1px solid rgba(255,255,255,.1);
 }
@@ -1757,7 +1759,7 @@ nav li ul a:before , nav li ul a:after {
 	top: 12px;
     font-size: 5px;
 	height: 4px;
-	background: rgb(6, 70, 6);
+	/* background: rgb(6, 70, 6); */
 	width: 100px;
 	margin-left: -50px;
 	z-index: 2;
@@ -4641,6 +4643,9 @@ height: 20rem;
 	overflow:hidden;
 }
 .sml-logo{
+	width: 60px;
+}
+.sml-logo1{
 	width: 20px;
 }
 .column-wrap-bg-text {
@@ -4794,7 +4799,7 @@ height: 20rem;
 .stg_link {
 	position: relative;
 	display: inline-block;
-	margin-top: 40px;
+	margin-top: 28px;
 	border: 1px solid  	 white;
 	padding: 15px 40px;
 	border-radius: 4px;
@@ -4937,6 +4942,14 @@ height: 20rem;
 .room-sec-title{
 	font-size: 3.5rem;
 	color: var(--main-color);
+}
+.ev-dates h3{
+	font-size: 12px;
+	font-weight: 600;
+}
+.cs-logo {
+	width: 20px!important;
+	height: 20px!important;
 }
 /*------ responsive----*/
 
@@ -5346,6 +5359,9 @@ height: 20rem;
 	font-size: 1.2em;
     color: #666;
 	font-weight: 500;
+}
+.stg_link {
+	margin-top: 40px;
 }
 .fw-aminit-wrap {
     height: auto;
