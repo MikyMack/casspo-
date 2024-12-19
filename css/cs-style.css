@@ -7,7 +7,7 @@
 	min-height: 100vh;
 	position:relative;
 	z-index:2;
-    background: #272535;
+    background: white;
 	padding:70px 100px;
     display : flex;
     align-items : center;
@@ -21,6 +21,8 @@
 	right:0;
 	overflow:hidden;
 	z-index:1;
+	background-color: rgb(8, 62, 8);
+
 }
  
 .cs-content-container .illustration_bg .bg{
@@ -29,10 +31,11 @@
 .cs-content-wrapper {
 	position:relative;
 	z-index:10;
+	
 }
 .cs-content-wrapper h2 {
 	font-size:3.5em;
-	color:#fff;
+	color:var(--main-color);
  
     font-weight: 600;
 	position:relative;
@@ -121,7 +124,7 @@
     border: 1px dashed rgba(255,255,255,0.2);
     z-index: -2;
 	border-radius: 20px;
-	background: #211F2C;
+	background: white;
  
 }
 .cs-content-container:after {
@@ -151,7 +154,7 @@
 	margin:60px 0 50px;
 }
 .cs-subcribe-form p {
-	color:#fff;
+	color:var(--main-color);
 	text-align: center;
 	margin-bottom: 10px;
  
@@ -201,6 +204,10 @@
 }
 .cs-contacts ul {
 	margin-top: 30px;
+	gap: 10px;
+	display: flex;
+	flex-direction: column;
+
 }
 .cs-contacts li {
 	display: inline-block;
@@ -211,6 +218,7 @@
     transition: all .2s ease-in-out;
 	position: relative;
 	font-family: var(--secondary-font);
+	font-weight: 400;
 }
 .cs-contacts .section-separator:before, .cs-contacts  .section-separator:after {
 	background: rgba(255,255,255,.2)
@@ -268,7 +276,7 @@
 .cs-countdown-item span {
 	font-size: 4.5vw;
 	font-weight:700;
- 	color: var(--main-color);
+ 	color: white;
 }
 .cs-countdown-item p {
 	padding-bottom:0;
@@ -350,12 +358,16 @@
     border-radius: 0;
     z-index: 1;
     border:none;
-}	
+}
+.cs-contacts{
+	padding-bottom: 3rem
+}
 }
 @media only screen and  (max-width: 768px) {
 .cs-countdown-item {
 	width:50%;
 }
+
 .cs-reserv_btn {
  
 	transform: translateX(0);
@@ -373,10 +385,13 @@
     bottom: 20px;
     box-shadow: 0px 0px 0px 20px rgba(255,255,255,0.03);
 }
+
  .cs-contacts  {
 	left: 0;
 	right: 0;
-	transform: translateX(0)
+	transform: translateX(0);
+
+	
  
 }
 .cs-contacts li {
@@ -386,7 +401,8 @@
 }
 .cs-contacts li:before {
 	display: none
-}	
+}
+
 }
 @media only screen and  (max-width: 564px) {
  
