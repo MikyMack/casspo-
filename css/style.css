@@ -380,7 +380,7 @@ blockquote p {
 }
 .logo-holder {
 	float: left;
-	border-right: 1px solid #eee;
+	/* border-right: 1px solid #eee; */
 	padding: 0 20px;
 	height: 80px;
 	overflow: hidden;
@@ -546,6 +546,11 @@ blockquote p {
 	padding:0 15px;
     line-height: 30px;
 	font-size: 12px;
+}
+
+.nav-holder nav li ul a:hover {
+    color: white;
+    background-color: #257731;
 }
 .dark-header .nav-holder nav li ul a{
 	color:#000;
