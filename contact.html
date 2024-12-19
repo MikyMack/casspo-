@@ -215,21 +215,40 @@
                                             <div class="tbc_subtitle">Get In Touch</div>
                                             <div class="tbc-separator"></div>
                                             <div class="contactform-wrap">
-                                                <form  class="comment-form" action="https://diamant.kwst.net/site/php/contact.php" name="contactform" id="contactform">
+                                                <form class="comment-form" action="javascript:void(0);" onsubmit="sendToWhatsapp()">
                                                     <fieldset>
                                                         <div id="message"></div>
                                                         <div class="row">
                                                             <div class="col-sm-6">
-                                                                <input type="text" name="name" id="name" placeholder="Your Name *" value="">
+                                                                <input type="text" name="name" id="name" placeholder="Your Name *" required>
                                                             </div>
                                                             <div class="col-sm-6">
-                                                                <input type="text"  name="email" id="email" placeholder="Email Address *" value="">
+                                                                <input type="email" name="email" id="email" placeholder="Email Address *" required>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <input type="text" name="phone" id="phone" placeholder="Your Phone *" required>
                                                             </div>
                                                         </div>
-                                                        <textarea name="comments"  id="comments" cols="40" rows="3" placeholder="Your Message:"></textarea>
-                                                        <button class="commentssubmit" id="submit_cnt">Send Message  </button>
+                                                        <textarea name="comments" id="comments" cols="40" rows="3" placeholder="Your Message:" required></textarea>
+                                                        <button class="commentssubmit" type="submit">Send Enquiry</button>
                                                     </fieldset>
                                                 </form>
+                                                <script>
+                                                    function sendToWhatsapp() {
+                                                        let number = "+919961011289";
+                                                        let name = document.getElementById('name').value;
+                                                        let email = document.getElementById('email').value;
+                                                        let phone = document.getElementById('phone').value;
+                                                    
+                                                        let message = document.getElementById('comments').value;
+                                                        let url = "https://wa.me/" + number + "?text=" + 
+                                                                "Name: " + encodeURIComponent(name) + "%0a" + 
+                                                                "Email: " + encodeURIComponent(email) + "%0a" + 
+                                                                "Phone: " + encodeURIComponent(phone) + "%0a" +
+                                                                "Message: " + encodeURIComponent(message);
+                                                        window.open(url, "_blank");
+                                                    }
+                                                </script>
                                             </div>
                                         </div>
                                     </div>
