@@ -4657,7 +4657,7 @@ height: 20rem;
 	height: 100%;
 	z-index: 0;
 	transform: rotateY(180deg);
-	background: var(--main-color);
+	background: rgb(128, 206, 128);
 	border-radius: 10px;
 }
 .card-flip-title h3{
