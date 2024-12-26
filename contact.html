@@ -19,7 +19,7 @@
           <div class="loader-layer"></div>
         </div>
         <span class="loader"
-          ><img style="height: 60px" class="" src="/casspoimg/logo.png" alt=""
+          ><img style="height: 60px" src="/casspoimg/logo.png" alt=""
         /></span>
       </div>
     </div>
@@ -33,27 +33,26 @@
           <div class="header-top fl-wrap">
             <div class="header-top_contacts">
               <a href="tel:+919961011289"><span>Call:</span> +91 9961011289</a
-              ><a href="#"><span>Find us:</span> Ernakulam</a>
+              ><a href=""><span>Find us:</span> Ernakulam</a>
             </div>
             <div class="booking-reviews">
               <div class="header-social">
                 <ul>
                   <li>
-                    <a href="https://www.facebook.com/casspoo" target="_blank"
-                      ><i class="fa-brands fa-facebook-f"></i
-                    ></a>
+                    <a href="https://www.facebook.com/casspoo" target="_blank">
+                      <img src="/img/icons/facebook.png" alt="Facebook" style="width: 24px; height: 24px;">
+                    </a>
+                  </li>
+               
+                  <li>
+                    <a href="https://wa.me/+919961011289" target="_blank">
+                      <img src="/img/icons/whatsapp.png" alt="WhatsApp" style="width: 24px; height: 24px;">
+                    </a>
                   </li>
                   <li>
-                    <a href="https://wa.me/+919961011289" target="_blank"
-                      ><i class="fa-brands fa-whatsapp"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.instagram.com/casspo_official/?hl=en"
-                      target="_blank"
-                      ><i class="fa-brands fa-instagram"></i
-                    ></a>
+                    <a href="https://www.instagram.com/casspo_official/?hl=en" target="_blank">
+                      <img src="/img/icons/instagram.png" alt="Instagram" style="width: 24px; height: 24px;">
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -172,7 +171,7 @@
       >
         <div
           class="bg par-elem"
-          data-bg="images/bg/7.jpg"
+          data-bg="casspoimg/bgcontact.jpg"
           data-scrollax="properties: { translateY: '30%' }"
         ></div>
 
@@ -197,48 +196,65 @@
                 <div class="contacts-card-item">
                   <i class="fa-light fa-location-dot"></i>
 
-                  <p>Casspo Eco Tour Pvt Ltd Ernakulam-682037, Kerala, India</p>
-                  <a href="#">Ernakulam</a>
+                  <p>WWB,building No 60/44, 3rd floor JC chambers Panampilly Nagar Ernakulam -682036</p>
+                 
                 </div>
                 <div class="contacts-card-item">
                   <i class="fa-light fa-mailbox"></i>
 
-                  <a href="#">Casspo@domain.com</a>
+                  <a href="mailto:casspoofficial@gmail.com">casspoofficial@gmail.com</a>
+
                 </div>
                 <div class="contacts-card-item">
                   <i class="fa-light fa-phone-rotary"></i>
 
                   <p>For General queries.</p>
-                  <a href="tel:+911234567890"> +919961011289</a>
-                  <a href="tel:+911234567890"> +919961011289</a>
+                  <a href="tel:+919961011289"> +91 9961011289</a>
+                  <a href="tel:+918547002268"> +91 8547002268</a>
                 </div>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Get In Touch</h5>
 
                 <div class="contact-frm-main">
-                  <form class="cnct-frm" action="">
+                  <form class="cnct-frm" id="whatsappForm" onsubmit="sendWhatsApp(event)">
                     <div style="display:flex ;" class="first-input">
                         <div>
-                            <input  type="text" placeholder="Name" />
+                            <input type="text" id="name" placeholder="Name" required />
                         </div>
                      <div>
-                        <input type="email" placeholder="Email" />
+                        <input type="email" id="email" placeholder="Email" required />
                      </div>
-                  
                     </div>
                     <div class="scnd-input">
-                        <input type="text" placeholder="Subject">
+                        <input type="text" id="subject" placeholder="Subject" required>
                     </div>
                     <div class="scnd-input">
-                        <input type="text" placeholder="Your Message">
+                        <input type="text" id="message" placeholder="Your Message" required>
                     </div>
-                    <div >
+                    <div>
                         <button class="commentssubmit" type="submit">
                             Send Enquiry
-                          </button>
+                        </button>
                     </div>
                   </form>
+
+                  <script>
+                    function sendWhatsApp(e) {
+                      e.preventDefault();
+                      
+                      const name = document.getElementById('name').value;
+                      const email = document.getElementById('email').value;
+                      const subject = document.getElementById('subject').value;
+                      const message = document.getElementById('message').value;
+
+                      const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+                      
+                      window.open(`https://wa.me/919961011289?text=${whatsappMessage}`);
+                      
+                      document.getElementById('whatsappForm').reset();
+                    }
+                  </script>
                 </div>
               </div>
             </div>
@@ -297,9 +313,7 @@
 
                     <div class="footer-widget-content">
                       <p>
-                        At Casspo, nature and peace come together. Escape to our
-                        serene resort, surrounded by lush greenery, for a
-                        relaxing and rejuvenating experience.
+                        Casspo is company which provide  Private experienial stay for a group of travelers and unique and  Adventure Activities  in your favorite destinations..
                       </p>
                       <a href="about.html" class="footer-widget-content-link"
                         ><span>Read more</span></a
@@ -351,23 +365,19 @@
                         <div class="container">
                           <ul>
                             <li>
-                              <a
-                                href="https://www.facebook.com/casspoo"
-                                target="_blank"
-                                ><i class="fa-brands fa-facebook-f"></i
-                              ></a>
+                              <a href="https://www.facebook.com/casspoo" target="_blank">
+                                <img src="/img/icons/facebook.png" alt="Facebook" style="width: 24px; height: 24px;">
+                              </a>
                             </li>
                             <li>
-                              <a href="#" target="_blank"
-                                ><i class="fa-brands fa-x-twitter"></i
-                              ></a>
+                              <a href="https://wa.me/+919961011289" target="_blank">
+                                <img src="/img/icons/whatsapp.png" alt="WhatsApp" style="width: 24px; height: 24px;">
+                              </a>
                             </li>
                             <li>
-                              <a
-                                href="https://www.instagram.com/casspo_official/?hl=en"
-                                target="_blank"
-                                ><i class="fa-brands fa-instagram"></i
-                              ></a>
+                              <a href="https://www.instagram.com/casspo_official/?hl=en" target="_blank">
+                                <img src="/img/icons/instagram.png" alt="Instagram" style="width: 24px; height: 24px;">
+                              </a>
                             </li>
                           </ul>
                         </div>
@@ -377,12 +387,12 @@
                           Stay connected with Casspo! For reservations or
                           inquiries, reach out to us anytime
                         </p>
-                        <form id="subscribe">
+                        <form id="subscribe" onsubmit="sendWhatsApp(event)">
                           <input
-                            class="enteremail"
-                            name="email"
-                            id="subscribe-email"
-                            placeholder="Your Email"
+                            class="enteremail" 
+                            name="message"
+                            id="subscribe-message"
+                            placeholder="Type your enquiry message"
                             spellcheck="false"
                             type="text"
                           />
@@ -391,13 +401,20 @@
                             id="subscribe-button"
                             class="subscribe-button color-bg"
                           >
-                            Send
+                            Send Enquiry
                           </button>
                           <label
-                            for="subscribe-email"
+                            for="subscribe-message"
                             class="subscribe-message"
                           ></label>
                         </form>
+                        <script>
+                          function sendWhatsApp(e) {
+                            e.preventDefault();
+                            const message = document.getElementById('subscribe-message').value;
+                            window.open(`https://wa.me/+919961011289?text=${encodeURIComponent(message)}`);
+                          }
+                        </script>
                       </div>
                     </div>
                   </div>

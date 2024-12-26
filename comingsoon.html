@@ -1,7 +1,5 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    
-<!-- Mirrored from diamant.kwst.net/site/coming-soon.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2024 04:07:34 GMT -->
 <head>
         <!--=============== basic  ===============-->
         <meta charset="UTF-8">
@@ -129,22 +127,57 @@
                         <p>Sign up for our newsletter and be the first to discover our exciting new locations
                         </p>
                         
-                        <form id="subscribe" class="fl-wrap">
-                            <input class="enteremail" name="email" id="subscribe-email" placeholder="Your Email" spellcheck="false" type="text">
-                            <button type="submit" id="subscribe-button" class="subscribe-button color-bg">Send </button>
-                            <label for="subscribe-email" class="subscribe-message"></label>
-                        </form>
+                        <form id="subscribe" onsubmit="sendWhatsApp(event)">
+                            <input
+                              class="enteremail" 
+                              name="message"
+                              id="subscribe-message"
+                              placeholder="Type your enquiry message"
+                              spellcheck="false"
+                              type="text"
+                            />
+                            <button
+                              type="submit"
+                              id="subscribe-button"
+                              class="subscribe-button color-bg"
+                            >
+                              Send Enquiry
+                            </button>
+                            <label
+                              for="subscribe-message"
+                              class="subscribe-message"
+                            ></label>
+                          </form>
+                          <script>
+                            function sendWhatsApp(e) {
+                              e.preventDefault();
+                              const message = document.getElementById('subscribe-message').value;
+                              window.open(`https://wa.me/+919961011289?text=${encodeURIComponent(message)}`);
+                            }
+                          </script>
                     </div>
                     <div class="clearfix"></div>
                     <div class="bold-separator"><span></span></div>
                     <div class="clearfix"></div>
                     <div class="cs-social">
                         <ul>
-                            <li><a href="https://www.facebook.com/casspoo" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="https://wa.me/+919961011289" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
-                            <li><a href="https://www.instagram.com/casspo_official/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-
-                        </ul>
+                            <li>
+                              <a href="https://www.facebook.com/casspoo" target="_blank">
+                                <img src="/img/icons/facebook.png" alt="Facebook" style="width: 24px; height: 24px;">
+                              </a>
+                            </li>
+                         
+                            <li>
+                              <a href="https://wa.me/+919961011289" target="_blank">
+                                <img src="/img/icons/whatsapp.png" alt="WhatsApp" style="width: 24px; height: 24px;">
+                              </a>
+                            </li>
+                            <li>
+                              <a href="https://www.instagram.com/casspo_official/?hl=en" target="_blank">
+                                <img src="/img/icons/instagram.png" alt="Instagram" style="width: 24px; height: 24px;">
+                              </a>
+                            </li>
+                          </ul>
                     </div>
                 </div>
                 <div class="map-dec2"></div>
@@ -159,7 +192,7 @@
               
                 <!--hero_promo-wrap end-->                
                 <!-- cs-media-container -->
-                <div class="cs-media-container counter-widget fl-wrap" data-countDate="09/12/2026">
+                <div class="cs-media-container counter-widget fl-wrap" data-countDate="09/06/2025">
                     <!-- countdown -->
                     <div class="countdown">
                         <div class="cs-countdown-item">
@@ -184,10 +217,10 @@
                 <!--cs-media-container end -->
                 <!-- cs-contacts --> 
                 <div class="cs-contacts">
-                    <div class="section-separator"><span><img class="sml-logo"  src="/casspoimg/logo.png" alt=""></span></div>
+                    <div class="section-separator"><span><img class="sml-logo"  src="/casspoimg/logo-2.png" alt=""></span></div>
                     <ul>
-                        <li><span>Call :</span><a href="#">+919961011289</a></li>
-                        <li><span>Write  :</span><a href="#">Casspo@domain.com</a></li>
+                        <li><span>Call :</span><a href="tel:+919961011289">+91 9961011289</a></li>
+                        <li><span>Write  :</span><a href="mailto:casspoofficial@gmail.com">casspoofficial@gmail.com</a></li>
                         <li><span>Find us : </span><a href="#">Ernakulam</a></li>
                     </ul>
                 </div>
@@ -280,6 +313,4 @@
         <script  src="js/scripts.js"></script>
         <script src="js/cs-scripts.js"></script>
     </body>
-
-<!-- Mirrored from diamant.kwst.net/site/coming-soon.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2024 04:07:36 GMT -->
 </html>

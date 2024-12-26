@@ -1,14 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-        <!--=============== basic  ===============-->
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>CASSPO</title>
-        <!--=============== css  ===============-->	
         <link type="text/css" rel="stylesheet" href="css/plugins.css">
         <link type="text/css" rel="stylesheet" href="css/style.css">
-        <!--=============== favicons ===============-->
         <link rel="shortcut icon" href="casspoimg/logo.png">
     </head>
     <body>
@@ -34,11 +31,23 @@
                         <div class="booking-reviews">
                             <div class="header-social">
                                 <ul>
-                                    <li><a href="https://www.facebook.com/casspoo" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="https://wa.me/+919961011289" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
-                                    <li><a href="https://www.instagram.com/casspo_official/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-    
-                                </ul>
+                                    <li>
+                                      <a href="https://www.facebook.com/casspoo" target="_blank">
+                                        <img src="/img/icons/facebook.png" alt="Facebook" style="width: 24px; height: 24px;">
+                                      </a>
+                                    </li>
+                                 
+                                    <li>
+                                      <a href="https://wa.me/+919961011289" target="_blank">
+                                        <img src="/img/icons/whatsapp.png" alt="WhatsApp" style="width: 24px; height: 24px;">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="https://www.instagram.com/casspo_official/?hl=en" target="_blank">
+                                        <img src="/img/icons/instagram.png" alt="Instagram" style="width: 24px; height: 24px;">
+                                      </a>
+                                    </li>
+                                  </ul>
                             </div>
                         </div>
                     </div>
@@ -472,8 +481,7 @@
                                         </div>
                  
                                         <div class="footer-widget-content">
-                                            <p>At Casspo, nature and peace come together. Escape to our serene resort,
-                                                surrounded by lush greenery, for a relaxing and rejuvenating experience.</p>
+                                            <p>Casspo is company which provide  Private experienial stay for a group of travelers and unique and  Adventure Activities  in your favorite destinations...</p>
                                             <a href="about.html" class="footer-widget-content-link"><span>Read
                                                     more</span></a>
                                         </div>
@@ -521,27 +529,57 @@
                                         <div style="line-height: 10px;" class="footer-widget-content">
                                             <h3   class="footer-widget-title mt-2">Social Media </h3>
                                             <div  class="footer-social">
-                                          
                                                 <div class="container">
-                                                    
                                                     <ul>
-                                                        <li><a href="https://www.facebook.com/casspoo" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                                        <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                                        <li><a href="https://www.instagram.com/casspo_official/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                                
-                                                    </ul>
-                                                </div>
+                                                        <li>
+                                                          <a href="https://www.facebook.com/casspoo" target="_blank">
+                                                            <img src="/img/icons/facebook.png" alt="Facebook" style="width: 24px; height: 24px;">
+                                                          </a>
+                                                        </li>
+                                                        <li>
+                                                          <a href="https://wa.me/+919961011289" target="_blank">
+                                                            <img src="/img/icons/whatsapp.png" alt="WhatsApp" style="width: 24px; height: 24px;">
+                                                          </a>
+                                                        </li>
+                                                        <li>
+                                                          <a href="https://www.instagram.com/casspo_official/?hl=en" target="_blank">
+                                                            <img src="/img/icons/instagram.png" alt="Instagram" style="width: 24px; height: 24px;">
+                                                          </a>
+                                                        </li>
+                                                      </ul>
+                                                  </div>
                                             </div>
                                             <div class="subcribe-form">
                                                 <p>Stay connected with Casspo! For reservations or inquiries, reach out to
                                                     us anytime</p>
-                                                <form id="subscribe">
-                                                    <input class="enteremail" name="email" id="subscribe-email"
-                                                        placeholder="Your Email" spellcheck="false" type="text">
-                                                    <button type="submit" id="subscribe-button"
-                                                        class="subscribe-button color-bg">Send </button>
-                                                    <label for="subscribe-email" class="subscribe-message"></label>
-                                                </form>
+                                                    <form id="subscribe" onsubmit="sendWhatsApp(event)">
+                                                        <input
+                                                          class="enteremail" 
+                                                          name="message"
+                                                          id="subscribe-message"
+                                                          placeholder="Type your enquiry message"
+                                                          spellcheck="false"
+                                                          type="text"
+                                                        />
+                                                        <button
+                                                          type="submit"
+                                                          id="subscribe-button"
+                                                          class="subscribe-button color-bg"
+                                                        >
+                                                          Send Enquiry
+                                                        </button>
+                                                        <label
+                                                          for="subscribe-message"
+                                                          class="subscribe-message"
+                                                        ></label>
+                                                      </form>
+                                                      <script>
+                                                        function sendWhatsApp(e) {
+                                                          e.preventDefault();
+                                                          const message = document.getElementById('subscribe-message').value;
+                                                          window.open(`https://wa.me/+919961011289?text=${encodeURIComponent(message)}`);
+                                                        }
+                                                      </script>
                                             </div>
                                         </div>
                                     </div>
