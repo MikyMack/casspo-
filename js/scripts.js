@@ -114,7 +114,7 @@ function initDiamant() {
                 prevEl: '.hs_btn_prev',
             },
             autoplay: {
-                delay: 2000, 
+                delay: 7000, 
                 disableOnInteraction: false
             },
         });

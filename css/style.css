@@ -5384,7 +5384,7 @@ height: 20rem;
 	left:50%;
 	width:22px;
 	height:20px;
-	margin-left:-11px;
+	margin-left:-20px;
 	margin-top:-6px;
 }
 .nav-button span{
@@ -6091,7 +6091,7 @@ width: 90%;
 }
 @media only screen and  (max-width: 640px) {
 .hero-title-container .section-title h2 , .content-section.parallax-section.hero-section .section-title h2 {
-    font-size: 3em;
+    font-size: 2em;
 	padding: 10px 0 ;
 	line-height: 46px;
 }
@@ -6159,7 +6159,7 @@ width: 90%;
 
 .whatsapp-icon {
 	position: fixed;
-	bottom: 80px;
+	bottom: 90px;
 	right: 20px;
 	z-index: 1000;
 }
@@ -6259,4 +6259,27 @@ width: 90%;
     #mobilenavbar img {
         max-width: 18px;
     }
+}
+
+
+.masked-text {
+	font-size: 3.5rem;
+	font-weight: bold;
+	color: transparent;
+	background-image: url('/casspoimg/thubnail.png');
+	background-size: 200%;
+	background-position: 0 50%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animate-background 15s infinite alternate linear;
+}
+
+@keyframes animate-background {
+	0% {
+		background-position: 0 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
 }
