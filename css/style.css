@@ -5335,6 +5335,9 @@ height: 20rem;
 } 	
 }
 @media only screen and  (max-width: 1068px) {
+	.header-top_contacts,.header-top , .comments-avatar , .hero-menu_header li:after , .hero-menu_header li:before ,.header-social ,.lang-wrap {
+		display: none		
+	}
 .main-header .container {
 	float: left;
 	width: 100%;
@@ -5550,7 +5553,7 @@ height: 20rem;
 
 .hero-wrap {
     height: calc(100% - 160px);
-	margin-top: 160px;
+	margin-top: 0px;
 }
 .hs_btn {
     top: 100%;
@@ -6091,7 +6094,7 @@ width: 90%;
 }
 @media only screen and  (max-width: 640px) {
 .hero-title-container .section-title h2 , .content-section.parallax-section.hero-section .section-title h2 {
-    font-size: 2em;
+    font-size: 4em;
 	padding: 10px 0 ;
 	line-height: 46px;
 }
